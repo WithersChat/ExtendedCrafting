@@ -16,9 +16,10 @@ import snownee.jade.api.IWailaPlugin;
 import snownee.jade.api.WailaPlugin;
 import snownee.jade.api.config.IPluginConfig;
 
+@SuppressWarnings("removal")
 @WailaPlugin
 public class JadeCompat implements IWailaPlugin {
-	private static final ResourceLocation CRAFTING_CORE_PROVIDER = new ResourceLocation(ExtendedCrafting.MOD_ID, "crafting_core");
+    private static final ResourceLocation CRAFTING_CORE_PROVIDER = new ResourceLocation(ExtendedCrafting.MOD_ID + ":crafting_core");
 	private static final ResourceLocation BASIC_TABLE_PROVIDER = new ResourceLocation(ExtendedCrafting.MOD_ID, "basic_table");
 	private static final ResourceLocation ADVANCED_TABLE_PROVIDER = new ResourceLocation(ExtendedCrafting.MOD_ID, "advanced_table");
 	private static final ResourceLocation ELITE_TABLE_PROVIDER = new ResourceLocation(ExtendedCrafting.MOD_ID, "elite_table");
@@ -117,7 +118,7 @@ public class JadeCompat implements IWailaPlugin {
 			}
 		}, EpicTableBlock.class);
 
-		registration.registerBlockComponent(new IBlockComponentProvider() {
+        registration.registerBlockComponent(new IBlockComponentProvider() {
 			@Override
 			public void appendTooltip(ITooltip tooltip, BlockAccessor accessor, IPluginConfig config) {
 				tooltip.add(ModTooltips.TIER.args(1).build());

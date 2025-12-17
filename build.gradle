@@ -6,7 +6,7 @@ plugins {
     id 'org.spongepowered.mixin' version '0.7.+'
 }
 
-version = '1.20.1-6.1.5u'
+version = '1.20.1-6.1.6u'
 group = 'com.witherschat.extendedcrafting'
 
 base {
@@ -107,7 +107,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-            'Specification-Title': 'Extended Crafting: Monifactory Edition',
+            'Specification-Title': 'Extended Crafting: Expanded Plus',
             'Specification-Vendor': 'WithersChat, BlakeBr0',
             'Specification-Version': '1',
             'Implementation-Title': project.name,

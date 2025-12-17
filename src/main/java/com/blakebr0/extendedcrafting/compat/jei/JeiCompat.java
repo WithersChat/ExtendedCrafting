@@ -97,7 +97,7 @@ public final class JeiCompat implements IModPlugin {
 				registration.addRecipes(EliteTableCategory.RECIPE_TYPE, recipes.getOrDefault(3, new ArrayList<>()));
 				registration.addRecipes(UltimateTableCategory.RECIPE_TYPE, recipes.getOrDefault(4, new ArrayList<>()));
 				registration.addRecipes(EpicTableCategory.RECIPE_TYPE, recipes.getOrDefault(5, new ArrayList<>()));
-			}
+            }
 
 			if (ModConfigs.ENABLE_COMPRESSOR.get()) {
 				registration.addRecipes(CompressorCraftingCategory.RECIPE_TYPE, manager.getAllRecipesFor(ModRecipeTypes.COMPRESSOR.get()));
@@ -234,7 +234,7 @@ public final class JeiCompat implements IModPlugin {
 				registration.addRecipeClickArea(AdvancedAutoTableScreen.class, 121, 39, 21, 14, AdvancedTableCategory.RECIPE_TYPE);
 				registration.addRecipeClickArea(EliteAutoTableScreen.class, 158, 72, 21, 14, EliteTableCategory.RECIPE_TYPE);
 				registration.addRecipeClickArea(UltimateAutoTableScreen.class, 193, 90, 21, 14, UltimateTableCategory.RECIPE_TYPE);
-				registration.addRecipeClickArea(EpicAutoTableScreen.class, 237, 108, 21, 14, UltimateTableCategory.RECIPE_TYPE);
+				registration.addRecipeClickArea(EpicAutoTableScreen.class, 237, 108, 21, 14, EpicTableCategory.RECIPE_TYPE);
 			}
 		}
 
